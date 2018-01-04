@@ -22,6 +22,8 @@ Precision of Accruacy of Lat / Long:
 
 https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude/8674#8674
 
+http://proceedings.esri.com/library/userconf/proc15/tech-workshops/tw_445-253.pdf
+
 ## Create and add the jars
 
 ```
