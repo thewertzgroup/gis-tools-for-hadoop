@@ -1,5 +1,9 @@
 # gis-tools-for-hadoop
 
+https://mapzen.com/data/metro-extracts/
+
+Search for New York ---> Export
+
 ## Create and add the jars
 
 ```
