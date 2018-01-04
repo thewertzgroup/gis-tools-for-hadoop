@@ -18,6 +18,10 @@ Esri Binning:
 
 https://github.com/Esri/gis-tools-for-hadoop/wiki/Aggregating-CSV-Data-%28Spatial-Binning%29
 
+Precision of Accruacy of Lat / Long:
+
+https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude/8674#8674
+
 ## Create and add the jars
 
 ```
