@@ -10,6 +10,10 @@ All Starbucks locations in the world
 
 https://gist.githubusercontent.com/dankohn/09e5446feb4a8faea24f/raw/59154601e80ee2f3e2c7433f55f6fa047dddb6be/starbucks_us_locations.csv
 
+US States:
+
+https://github.com/shawnbot/topogram/blob/master/data/us-states.geojson
+
 ## Create and add the jars
 
 ```
