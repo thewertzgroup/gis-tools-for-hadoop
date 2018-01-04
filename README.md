@@ -26,6 +26,8 @@ Precision of Accruacy of Lat / Long:
 
 https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-longitude/8674#8674
 
+Big Data and Analytics: A Conceptual Overview
+
 http://proceedings.esri.com/library/userconf/proc15/tech-workshops/tw_445-253.pdf
 
 ll geometry-api-java/target/esri-geometry-api-2.0.0.jar
