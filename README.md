@@ -24,6 +24,12 @@ https://gis.stackexchange.com/questions/8650/measuring-accuracy-of-latitude-and-
 
 http://proceedings.esri.com/library/userconf/proc15/tech-workshops/tw_445-253.pdf
 
+ll geometry-api-java/target/esri-geometry-api-2.0.0.jar
+
+ll spatial-framework-for-hadoop/hive/target/spatial-sdk-hive-2.1.0-SNAPSHOT.jar
+
+ll spatial-framework-for-hadoop/json/target/spatial-sdk-json-2.1.0-SNAPSHOT.jar
+
 ## Create and add the jars
 
 ```
