@@ -8,7 +8,7 @@ https://mapzen.com/data/metro-extracts/metro/new-york_new-york/
 
 All Starbucks locations in the world
 
-https://opendata.socrata.com/Business/All-Starbucks-Locations-in-the-World/xy4y-c4mk
+https://gist.githubusercontent.com/dankohn/09e5446feb4a8faea24f/raw/59154601e80ee2f3e2c7433f55f6fa047dddb6be/starbucks_us_locations.csv
 
 ## Create and add the jars
 
