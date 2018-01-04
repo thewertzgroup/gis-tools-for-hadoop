@@ -4,6 +4,8 @@ https://mapzen.com/data/metro-extracts/
 
 Search for New York ---> Export
 
+https://mapzen.com/data/metro-extracts/metro/new-york_new-york/
+
 ## Create and add the jars
 
 ```
