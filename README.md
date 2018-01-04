@@ -6,6 +6,10 @@ Search for New York ---> Export
 
 https://mapzen.com/data/metro-extracts/metro/new-york_new-york/
 
+All Starbucks locations in the world
+
+https://opendata.socrata.com/Business/All-Starbucks-Locations-in-the-World/xy4y-c4mk
+
 ## Create and add the jars
 
 ```
