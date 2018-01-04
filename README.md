@@ -14,6 +14,10 @@ US States:
 
 https://github.com/shawnbot/topogram/blob/master/data/us-states.geojson
 
+Esri Binning:
+
+https://github.com/Esri/gis-tools-for-hadoop/wiki/Aggregating-CSV-Data-%28Spatial-Binning%29
+
 ## Create and add the jars
 
 ```
