@@ -6,6 +6,10 @@ Search for New York ---> Export
 
 https://mapzen.com/data/metro-extracts/metro/new-york_new-york/
 
+Shapefile 2 Geo JSON:
+
+new-york_new-york.imposm-shapefiles]$ ogr2ogr -f GeoJSON -t_srs crs:84 new-york_new-york_osm_places.geojson new-york_new-york_osm_places.shp
+
 All Starbucks locations in the world
 
 https://gist.githubusercontent.com/dankohn/09e5446feb4a8faea24f/raw/59154601e80ee2f3e2c7433f55f6fa047dddb6be/starbucks_us_locations.csv
