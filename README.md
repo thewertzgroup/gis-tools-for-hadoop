@@ -36,6 +36,10 @@ ll spatial-framework-for-hadoop/hive/target/spatial-sdk-hive-2.1.0-SNAPSHOT.jar
 
 ll spatial-framework-for-hadoop/json/target/spatial-sdk-json-2.1.0-SNAPSHOT.jar
 
+## Reverse Geocoding: Point in polygon lat/long --> zipcode GeoJSON boundaries
+
+https://www.census.gov/cgi-bin/geo/shapefiles2010/layers.cgi
+
 ## Create and add the jars
 
 ```
