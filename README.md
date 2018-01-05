@@ -83,6 +83,10 @@ LOCATION '/user/ztrew/zipcode';
 
 select ZCTA5CE10 from zipcode limit 5;
 
+SELECT z.ZCTA5CE10, s.addr, s.long, s.lat FROM zipcode z
+JOIN starbucks s
+WHERE ST_Contains(z.geometry, ST_Point(s.long, s.lat))
+limit 5;
 ```
 
 ## Create and add the jars
