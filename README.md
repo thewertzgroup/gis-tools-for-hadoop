@@ -65,21 +65,24 @@ create temporary function ST_BinEnvelope as 'com.esri.hadoop.hive.ST_BinEnvelope
 DROP TABLE IF EXISTS zipcode;
 
 CREATE EXTERNAL TABLE IF NOT EXISTS zipcode (
-        ZCTA5CE10 INT,
-        GEOID10 INT,
-        CLASSFP10 CHAR(2),
-        MTFCC10 CHAR(5),
-        FUNCSTAT10 CHAR(1),
-        ALAND10 INT,
-        AWATER10 INT,
-        INTPTLAT10 DOUBLE,
-        INTPTLON10 DOUBLE,
-        geometry binary
+        ZCTA5CE10       STRING,
+        GEOID10         STRING,
+        CLASSFP10       STRING,
+        MTFCC10         STRING,
+        FUNCSTAT10      STRING,
+        ALAND10         STRING,
+        AWATER10        STRING,
+        INTPTLAT10      STRING,
+        INTPTLON10      STRING,
+        geometry        binary
 )
 ROW FORMAT SERDE 'com.esri.hadoop.hive.serde.GeoJsonSerDe'
 STORED AS INPUTFORMAT 'com.esri.json.hadoop.EnclosedGeoJsonInputFormat'
 OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
 LOCATION '/user/ztrew/zipcode';
+
+select ZCTA5CE10 from zipcode limit 5;
+
 ```
 
 ## Create and add the jars
