@@ -40,6 +40,48 @@ ll spatial-framework-for-hadoop/json/target/spatial-sdk-json-2.1.0-SNAPSHOT.jar
 
 https://www.census.gov/cgi-bin/geo/shapefiles2010/main
 
+```
+[ztrew@foo zipcode]$cat ../bin/ogr2ogr.sh
+ogr2ogr -f GeoJSON -t_srs crs:84 ${1}.geojson ${1}.shp
+[ztrew@foo zipcode]$ ../bin/ogr2ogr.sh tl_2010_us_zcta510
+```
+
+```
+set hive.auto.convert.join=false;
+
+add jar hdfs:///user/hive/udf_jars/esri-geometry-api-2.0.0.jar;
+add jar hdfs:///user/hive/udf_jars/spatial-sdk-json-2.1.0-SNAPSHOT.jar;
+add jar hdfs:///user/hive/udf_jars/spatial-sdk-hive-2.1.0-SNAPSHOT.jar;
+
+create temporary function ST_Point as 'com.esri.hadoop.hive.ST_Point';
+create temporary function ST_Contains as 'com.esri.hadoop.hive.ST_Contains';
+create temporary function ST_GeomFromGeoJson as 'com.esri.hadoop.hive.ST_GeomFromGeoJson';
+create temporary function ST_Intersects as 'com.esri.hadoop.hive.ST_Intersects';
+create temporary function ST_AsText as 'com.esri.hadoop.hive.ST_AsText';
+create temporary function ST_AsGeoJson as 'com.esri.hadoop.hive.ST_AsGeoJson';
+create temporary function ST_Bin as 'com.esri.hadoop.hive.ST_Bin';
+create temporary function ST_BinEnvelope as 'com.esri.hadoop.hive.ST_BinEnvelope';
+
+DROP TABLE IF EXISTS zipcode;
+
+CREATE EXTERNAL TABLE IF NOT EXISTS zipcode (
+        ZCTA5CE10 INT,
+        GEOID10 INT,
+        CLASSFP10 CHAR(2),
+        MTFCC10 CHAR(5),
+        FUNCSTAT10 CHAR(1),
+        ALAND10 INT,
+        AWATER10 INT,
+        INTPTLAT10 DOUBLE,
+        INTPTLON10 DOUBLE,
+        geometry binary
+)
+ROW FORMAT SERDE 'com.esri.hadoop.hive.serde.GeoJsonSerDe'
+STORED AS INPUTFORMAT 'com.esri.json.hadoop.EnclosedGeoJsonInputFormat'
+OUTPUTFORMAT 'org.apache.hadoop.hive.ql.io.HiveIgnoreKeyTextOutputFormat'
+LOCATION '/user/ztrew/zipcode';
+```
+
 ## Create and add the jars
 
 ```
