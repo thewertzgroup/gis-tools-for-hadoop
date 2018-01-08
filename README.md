@@ -27,6 +27,7 @@ wget https://raw.githubusercontent.com/Esri/gis-tools-for-hadoop/master/samples/
 hdfs dfs -mkdir gis
 hdfs dfs -mkdir gis/california-counties
 hdfs dfs -mkdir gis/earthquakes
+hdfs dfs -put california-counties.csv gis/california-counties
 hdfs dfs -put earthquakes.csv gis/earthquakes
 ```
 
