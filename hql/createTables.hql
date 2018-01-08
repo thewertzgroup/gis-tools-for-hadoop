@@ -4,7 +4,6 @@ ADD JAR hdfs:///user/hive/udf_jars/spatial-sdk-json-2.1.0-SNAPSHOT.jar;
 
 create temporary function ST_AsText as 'com.esri.hadoop.hive.ST_AsText';
 
-
 DROP TABLE IF EXISTS earthquakes;
 DROP TABLE IF EXISTS counties;
 
