@@ -1,5 +1,20 @@
 # gis-tools-for-hadoop
 
+## Step 1: Build Jars and Add to HDFS
+
+```
+git clone https://github.com/Esri/geometry-api-java
+git clone https://github.com/Esri/gis-tools-for-hadoop
+git clone https://github.com/Esri/spatial-framework-for-hadoop
+
+hdfs dfs -mkdir /user/hive/udf_jars
+hdfs dfs -put esri-geometry-api-2.0.0.jar /user/hive/udf_jars
+hdfs dfs -put spatial-sdk-json-2.1.0-SNAPSHOT.jar /user/hive/udf_jars
+hdfs dfs -put spatial-sdk-hive-2.1.0-SNAPSHOT.jar /user/hive/udf_jars
+```
+
+## Step 2: GeoJSON Files
+
 https://mapzen.com/data/metro-extracts/
 
 Search for New York ---> Export
@@ -89,18 +104,6 @@ WHERE ST_Contains(z.geometry, ST_Point(s.long, s.lat))
 limit 5;
 ```
 
-## Create and add the jars
-
-```
-git clone https://github.com/Esri/geometry-api-java
-git clone https://github.com/Esri/gis-tools-for-hadoop
-git clone https://github.com/Esri/spatial-framework-for-hadoop
-
-hdfs dfs -mkdir /user/hive/udf_jars
-hdfs dfs -put esri-geometry-api-2.0.0.jar /user/hive/udf_jars
-hdfs dfs -put spatial-sdk-json-2.1.0-SNAPSHOT.jar /user/hive/udf_jars
-hdfs dfs -put spatial-sdk-hive-2.1.0-SNAPSHOT.jar /user/hive/udf_jars
-```
 ## Prepare hive
 
 ```
