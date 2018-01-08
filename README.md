@@ -18,13 +18,17 @@ hdfs dfs -put spatial-sdk-hive-2.1.0-SNAPSHOT.jar /user/hive/udf_jars
 
 ## Step 2: Get Sample Data and GeoJSON Files
 
+```
 wget https://raw.githubusercontent.com/Esri/gis-tools-for-hadoop/master/samples/data/counties-data/california-counties.json
 wget https://raw.githubusercontent.com/Esri/gis-tools-for-hadoop/master/samples/data/earthquake-data/earthquakes.csv
+```
 
+```
 hdfs dfs -mkdir gis
 hdfs dfs -mkdir gis/california-counties
 hdfs dfs -mkdir gis/earthquakes
 hdfs dfs -put earthquakes.csv gis/earthquakes
+```
 
 https://mapzen.com/data/metro-extracts/
 
