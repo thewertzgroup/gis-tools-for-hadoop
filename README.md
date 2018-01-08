@@ -4,8 +4,8 @@
 * **GIS**: Geographic Information System
 * **ESRI**: A company whose GIS mapping software is some of the most powerful mapping and spatial data analytics technology available.
 * **Esri JSON**: A proprietary JSON format for GIS data created by Esri.
-* **GeoJSON**: http://geojson.org/ In 2015, the Internet Engineering Task Force (IETF), in conjunction with the original specification authors, formed a GeoJSON WG to standardize GeoJSON. RFC 7946 was published in August 2016 and is the new standard specification of the GeoJSON format, replacing the 2008 GeoJSON specification.
-* **Shapefile**: https://en.wikipedia.org/wiki/Shapefile The shapefile format is a popular geospatial vector data format for geographic information system (GIS) software. It is developed and regulated by Esri as a (mostly) open specification for data interoperability among Esri and other GIS software products.
+* **GeoJSON**: [http://geojson.org/](http://geojson.org/) In 2015, the Internet Engineering Task Force (IETF), in conjunction with the original specification authors, formed a GeoJSON WG to standardize GeoJSON. RFC 7946 was published in August 2016 and is the new standard specification of the GeoJSON format, replacing the 2008 GeoJSON specification.
+* **Shapefile**: [https://en.wikipedia.org/wiki/Shapefile](https://en.wikipedia.org/wiki/Shapefile) The shapefile format is a popular geospatial vector data format for geographic information system (GIS) software. It is developed and regulated by Esri as a (mostly) open specification for data interoperability among Esri and other GIS software products.
 
 ## Step 1: Build Jars and Add to HDFS
 
