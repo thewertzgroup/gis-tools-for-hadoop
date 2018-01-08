@@ -4,9 +4,10 @@
 
 If you need to install Apache Maven: https://maven.apache.org/install.html
 
+Esri examples and sample data: git clone https://github.com/Esri/gis-tools-for-hadoop
+
 ```
 git clone https://github.com/Esri/geometry-api-java
-git clone https://github.com/Esri/gis-tools-for-hadoop
 git clone https://github.com/Esri/spatial-framework-for-hadoop
 
 hdfs dfs -mkdir /user/hive/udf_jars
