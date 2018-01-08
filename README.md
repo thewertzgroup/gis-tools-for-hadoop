@@ -9,9 +9,8 @@
 
 ## Step 1: Build Jars and Add to HDFS
 
-If you need to install Apache Maven: https://maven.apache.org/install.html
-
-Esri examples and sample data: git clone https://github.com/Esri/gis-tools-for-hadoop
+* If you need to install Apache Maven: <a href="https://maven.apache.org/install.html" target="_blank">https://maven.apache.org/install.html</a>
+* Esri examples and sample data: <a href="https://github.com/Esri/gis-tools-for-hadoop" target="_blank">https://github.com/Esri/gis-tools-for-hadoop</a>
 
 ```
 git clone https://github.com/Esri/geometry-api-java
