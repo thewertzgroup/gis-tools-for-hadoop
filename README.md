@@ -41,7 +41,7 @@ hdfs dfs -put earthquakes.csv gis/earthquakes
 
 Building ogr2ogr to convert Shape files to GEOJson:
 
-<a href="https://github.com/wavded/ogre/wiki/Compiling-a-recent-ogr2ogr-from-source-on-CentOS-(RHEL)" target="_blank">href="https://github.com/wavded/ogre/wiki/Compiling-a-recent-ogr2ogr-from-source-on-CentOS-(RHEL)</a>
+<a href="https://github.com/wavded/ogre/wiki/Compiling-a-recent-ogr2ogr-from-source-on-CentOS-(RHEL)" target="_blank">href="Compiling a recent ogr2ogr from source on CentOS (RHEL)</a>
 
 * wget http://download.osgeo.org/gdal/2.2.3/gdal-2.2.3.tar.gz
 * wget http://download.osgeo.org/proj/proj-4.9.3.tar.gz
