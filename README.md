@@ -37,6 +37,17 @@ hdfs dfs -put california-counties.csv gis/california-counties
 hdfs dfs -put earthquakes.csv gis/earthquakes
 ```
 
+## Step 3: Build ogr2ogr to conver Shapefiles to GeoJSON
+
+Building ogr2ogr to convert Shape files to GEOJson:
+
+https://github.com/wavded/ogre/wiki/Compiling-a-recent-ogr2ogr-from-source-on-CentOS-(RHEL)
+
+wget http://download.osgeo.org/gdal/2.2.3/gdal-2.2.3.tar.gz
+wget http://download.osgeo.org/proj/proj-4.9.3.tar.gz
+
+## Step 4: Additional Data Sets
+
 https://mapzen.com/data/metro-extracts/
 
 Search for New York ---> Export
